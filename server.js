@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cardsRoute = require('./routes/cards');
 const cors = require('cors');
 const app = express();
-const PORT = 4000;
+const port = 4000;
 
 
 app.use(express.json());
@@ -18,4 +18,4 @@ mongoose.connect('mongodb+srv://root:kiran@cluster0.cjkd2.mongodb.net/tinderDB?r
 then(() => console.log('Database connected successfuly')).
 catch((err) => console.log(err));
 
-app.listen(PORT, () => console.log(`server listning at port no - ${PORT}`))
+app.listen(process.env.PORT || , () => console.log(`server listning at port no - ${port}`))
