@@ -10,6 +10,10 @@ app.use(express.json());
 app.use(cors());
 app.use("/cards", cardsRoute);
 
+app.get("/", (req, res) => {
+    res.send("wellcome to tinder backend");
+});
+
 
 mongoose.connect('mongodb+srv://root:kiran@cluster0.cjkd2.mongodb.net/tinderDB?retryWrites=true&w=majority', {
     useNewUrlParser: true,
