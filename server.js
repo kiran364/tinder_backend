@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 
-mongoose.connect('mongodb+srv://root:password@cluster0.cjkd2.mongodb.net/tinderDB?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://root:kiran@cluster0.cjkd2.mongodb.net/tinderDB?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   }).
